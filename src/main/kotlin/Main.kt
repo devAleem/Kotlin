@@ -1,6 +1,3 @@
-import java.util.StringJoiner
-import javax.swing.UIManager.get
-
 fun Person.printName(){
 
     println("This is an extension function ${this.name}")
@@ -10,6 +7,12 @@ fun Person.printName(){
 fun main(args: Array<String>) {
     val person:Person = Person("Aleem","Awan")
     person.printName()
+
+    val user = User("james","jelly")
+    val (firstName,lastName) = user
+
+    print("$firstName $lastName" )
+
 }
 
 
