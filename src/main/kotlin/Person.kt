@@ -1,4 +1,4 @@
-class Person constructor(firstName:String,lastName:String) {
+open class Person constructor(firstName:String, lastName:String) {
     lateinit var name:String
 
     val firstProperty = "Name : $firstName  $lastName".also(::println)
