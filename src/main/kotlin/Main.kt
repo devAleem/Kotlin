@@ -13,6 +13,8 @@ fun main(args: Array<String>) {
 
     print("$firstName $lastName" )
 
+    Politics().printPartyLeader(2)
+
 }
 
 
