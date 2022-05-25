@@ -13,7 +13,7 @@ fun main(args: Array<String>) {
 
     print("$firstName $lastName" )
 
-    Politics().printPartyLeader(2)
+    Politics().printPartyLeader(Parties.PTI.also(::println))
 
 }
 
