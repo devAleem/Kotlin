@@ -26,6 +26,13 @@ fun main() {
 
     val singleton = University.create()
     singleton.printUniversity()
+
+    Methods.double(3)
+
+
+    val baseImple = BaseImplementation(3)
+    Derived(baseImple).printNumber()
+    Derived(baseImple).printDouble()
 }
 
 
