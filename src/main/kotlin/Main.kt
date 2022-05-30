@@ -49,6 +49,8 @@ fun main() {
         x,y -> x + y
     }
     println(sum(2,3))
+
+
 }
 
 
