@@ -1,5 +1,6 @@
 import java.awt.event.MouseAdapter
 import java.awt.event.MouseEvent
+import kotlin.reflect.typeOf
 
 fun Person.printName(){
 
@@ -42,8 +43,12 @@ fun main() {
     }
 
     println(asList("raheem","aleem","saleem"))
-    println(asList(1,2,3,4,4,5,4,3,23,2,2))
+    println(asList(1,2,3,4,4,5,4,3,23,2,2,"eres",0.5,false))
 
+    val sum : (Int,Int) -> Int = {
+        x,y -> x + y
+    }
+    println(sum(2,3))
 }
 
 
