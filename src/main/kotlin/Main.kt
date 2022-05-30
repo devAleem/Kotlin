@@ -29,10 +29,17 @@ fun main() {
 
     Methods.double(3)
 
-
     val baseImple = BaseImplementation(3)
     Derived(baseImple).printNumber()
     Derived(baseImple).printDouble()
+
+ fun foo(vararg str: String){
+     for ( s in str){
+         println(s)
+     }
+ }      // Uses both default values bar = 0 and baz = 1
+
+    foo( "raheem","aleenm","pashtun")
 }
 
 
