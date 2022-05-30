@@ -33,13 +33,17 @@ fun main() {
     Derived(baseImple).printNumber()
     Derived(baseImple).printDouble()
 
- fun foo(vararg str: String){
-     for ( s in str){
-         println(s)
-     }
- }      // Uses both default values bar = 0 and baz = 1
+    fun <T> asList(vararg ts:T):List<T> {
+        val result = ArrayList<T>()
+        for(t in ts){
+            result.add(t)
+        }
+        return result
+    }
 
-    foo( "raheem","aleenm","pashtun")
+    println(asList("raheem","aleem","saleem"))
+    println(asList(1,2,3,4,4,5,4,3,23,2,2))
+
 }
 
 
