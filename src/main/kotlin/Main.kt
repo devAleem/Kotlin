@@ -59,8 +59,11 @@ fun main() {
         }
     }
 
-    print(result)
+    println(result)
 
+    println("Greater Number is : ${getMaxNumber(3,5)}")
+
+    printGrade(-112)
 
 }
 
