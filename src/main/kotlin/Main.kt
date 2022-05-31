@@ -65,6 +65,20 @@ fun main() {
 
     printGrade(-112)
 
+    for(i in 6 downTo  0 step 2){
+        printTable(i)
+    }
+
+    val strArray = arrayOf("January","February","March","April","May","June","July")
+    for ((index,value) in strArray.withIndex()){
+        println("At Position $index, $value")
+    }
+    var i = 0
+    while ( i < 10 ){
+        print(i)
+        i++
+    }
+
 }
 
 

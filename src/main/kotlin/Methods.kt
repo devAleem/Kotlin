@@ -25,4 +25,11 @@ fun printGrade(x:Int) {
       in 0..49 -> print("Sorry You have failed")
       else -> print("Percentage can be between 0 to 100")
    }
+
 }
+fun printTable(table:Int){
+   for (i in 0..10){
+      println("$table * $i = ${table * i}")
+   }
+}
+
