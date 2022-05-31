@@ -1,6 +1,5 @@
 import java.awt.event.MouseAdapter
 import java.awt.event.MouseEvent
-import kotlin.reflect.typeOf
 
 fun Person.printName(){
 
@@ -50,7 +49,15 @@ fun main() {
     }
     println(sum(2,3))
 
+    val listWithNulls :List<Int?> = listOf(0,null,1,2,3,4,null,5,6,2)
+    var result : Int = 0
+    for (item in listWithNulls){
+        item?.let{
+            result += it
+        }
+    }
 
+    print(result)
 }
 
 
