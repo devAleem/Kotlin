@@ -51,6 +51,8 @@ fun main() {
 
     val listWithNulls :List<Int?> = listOf(0,null,1,2,3,4,null,5,6,2)
     var result : Int = 0
+
+
     for (item in listWithNulls){
         item?.let{
             result += it
@@ -58,6 +60,8 @@ fun main() {
     }
 
     print(result)
+
+
 }
 
 
