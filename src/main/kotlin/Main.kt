@@ -1,5 +1,6 @@
 import java.awt.event.MouseAdapter
 import java.awt.event.MouseEvent
+import kotlin.random.Random
 
 fun Person.printName(){
 
@@ -145,6 +146,23 @@ fun main() {
     }
 
     print(resultarr)
+
+    /**
+     * More on Kotlin Collection Lists
+     */
+
+    println("My name is aleem".replace("\\s".toRegex(),"").toList())
+
+    var sequence = generateSequence {
+        Random.nextInt(50).takeIf { it > 25 }
+    }
+
+   var read:MutableList<Int> = (5..50 step 5).toMutableList()
+   println(read)
+    println(read.slice(read.lastIndex downTo 0 step 2))
+
+    read.add(2)
+
 }
 
 
