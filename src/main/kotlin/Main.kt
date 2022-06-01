@@ -107,7 +107,7 @@ fun main() {
     println(randomNumbers.size)
     println(randomNumbers.maxOrNull())
     println(randomNumbers.minOrNull())
-
+    println(randomNumbers.count())
 }
 
 
