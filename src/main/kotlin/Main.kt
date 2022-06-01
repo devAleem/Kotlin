@@ -108,6 +108,11 @@ fun main() {
     println(randomNumbers.maxOrNull())
     println(randomNumbers.minOrNull())
     println(randomNumbers.count())
+    println(randomNumbers.count{
+        it <= 5
+    })
+    println(randomNumbers.joinToString(","))
+
 }
 
 
