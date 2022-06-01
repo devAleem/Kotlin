@@ -79,6 +79,35 @@ fun main() {
         i++
     }
 
+    /**
+     * Working with Collection library
+     * Lists, Maps and Sets
+     */
+
+    val fruits = listOf("Apple","banana","apricot")
+    println(fruits[2])
+
+    val newFruits = fruits.map{
+        it.uppercase()
+    }
+    println(newFruits)
+
+    fruits.mapIndexed { index, s ->
+        println("$index at position $s")
+    }
+
+    val newFilterItems = fruits.filter {
+       it.length > 5
+    }
+    print(newFilterItems)
+
+    val randomNumbers = listOf(1,2,3,4,4,5,6,45,4,3,3,3,4,43,3)
+    println(randomNumbers.sum())
+    println(randomNumbers.average())
+    println(randomNumbers.size)
+    println(randomNumbers.maxOrNull())
+    println(randomNumbers.minOrNull())
+
 }
 
 
