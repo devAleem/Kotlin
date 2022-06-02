@@ -32,3 +32,7 @@ fun processLanguages(languages:List<String>,action:(String)-> Unit){
 interface Greeter{
     fun greet(item:String)
 }
+
+fun greetPersons(persons:List<String>,greeter: Greeter){
+    persons.forEach { greeter.greet(it) }
+}
