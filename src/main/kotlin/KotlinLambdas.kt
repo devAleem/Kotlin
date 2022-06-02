@@ -19,3 +19,16 @@ val printKeyValue:(Pair<String,Int>) -> Unit = {
 fun processLanguages(languages:List<String>,action:(String)-> Unit){
     languages.forEach(action)
 }
+
+/**
+ * SAM(Single Access Method) conversion
+ * If you need to provide an instance of an interface with a single abstract method,
+ * SAM conversion lets us use a lambda to represent that interface rather than having
+ * to instantiate a new class instance to implement the interface.
+ *
+ * Example os SAM conversion is below
+ */
+
+interface Greeter{
+    fun greet(item:String)
+}
