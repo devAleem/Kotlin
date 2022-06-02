@@ -163,18 +163,12 @@ fun main() {
 
     read.add(2)
 
-    fun arithmetic(result:Int,sum:(x:Int,y:Int) -> Unit)  {
+    /**
+     * [evenList] filters even numbers from list
+     */
 
-    }
-    val productValues : (x:Int,y:Int) -> Unit = {
-        x,y -> println(x*y)
-    }
-
-    val sumValues = {
-        x:Int,y:Int,z:Int -> println(x+y+z)
-    }
-    productValues(3,4)
-    sumValues(2,3,4)
+    println(evenList)
+    printKeyValue("id" to 5)
 }
 
 
