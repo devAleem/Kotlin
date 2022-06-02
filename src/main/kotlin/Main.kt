@@ -169,6 +169,15 @@ fun main() {
 
     println(evenList)
     printKeyValue("id" to 5)
+
+    /**
+     * [processLanguages] is higher oreder function that takes lambda as argument
+     */
+
+    val languages =  listOf("Kotlin","php","python","java","c++","javascript")
+    processLanguages(languages) {
+        println(it )
+    }
 }
 
 

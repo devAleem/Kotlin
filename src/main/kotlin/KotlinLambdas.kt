@@ -15,3 +15,7 @@ val evenList = listOf(1,2,34,4,3).filter {
 val printKeyValue:(Pair<String,Int>) -> Unit = {
     (key,value) -> println("Key:$key, value:$value")
 }
+
+fun processLanguages(languages:List<String>,action:(String)-> Unit){
+    languages.forEach(action)
+}
