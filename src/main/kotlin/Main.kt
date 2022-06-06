@@ -178,6 +178,16 @@ fun main() {
     processLanguages(languages) {
         println(it )
     }
+
+
+    val persons = listOf("Saad","Fardeen","Mureed Abbas")
+
+    greetPersons(persons,object : Greeter {
+        override fun greet(item: String) {
+            println("Hello $item")
+        }
+    })
+
 }
 
 
