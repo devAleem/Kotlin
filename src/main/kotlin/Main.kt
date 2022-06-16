@@ -15,6 +15,12 @@ object DefaultListener:MouseAdapter(){
     }
 }
 fun main() {
+
+    var number: Int? = 4
+    number?.let{
+        println(it + 2)
+    }
+
     val person = Person("Aleem", "Awan")
     person.printName()
 
@@ -187,6 +193,7 @@ fun main() {
             println("Hello $item")
         }
     })
+
 
 }
 
