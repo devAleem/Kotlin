@@ -16,10 +16,10 @@ object DefaultListener:MouseAdapter(){
 }
 fun main() {
 
-    var number: Int? = 4
-    number?.let{
-        println(it + 2)
-    }
+    var number: Int = 1
+   val x =  number.let{
+        it + 2
+    } ?: 3
 
     val person = Person("Aleem", "Awan")
     person.printName()
@@ -195,6 +195,13 @@ fun main() {
     })
 
 
+    var count:Int = 2
+
+    fun getSquareCount() = (count * 5).also {
+        ++count
+    }
+
+    print("${getSquareCount()}   $count")
 }
 
 
